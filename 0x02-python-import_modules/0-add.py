@@ -1,8 +1,7 @@
-#!/usr/bin/python3
-def add(a, b):
+#!/usr/bin/pythoni3
+if __name__ == "__main__":
+    from add_0 import add
+
     a = 1
     b = 2
-    print(f"{a} + {b} = {a + b}", end="\n")
-
-
-__name__ == "__main__"
+    print(f"{a} + {b} = {add(a, b)}")
