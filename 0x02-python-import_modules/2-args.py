@@ -2,14 +2,14 @@
 if __name__ == "__main__":
     import sys
 
-    length = len(sys.argv) - 1
-    if length == 0:
+    num_args = len(sys.argv) - 1
+    if num_args == 0:
         print("0 arguments.")
     else:
-        if length == 1:
-            print("1 argument:")
+        if num_args == 1:
+            print("{} argument:".format(num_args))
         else:
-            print("{} arguments:".format(length))
-        for num in range(length):
-            number = 1 + num
-            print("{:d}: {:s}".format(number, sys.argv[num]))
+            print("{} arguments:".format(num_args))
+    for num in range(num_args):
+        number = num + 1
+        print("{:d}: {:s}".format(number, sys.argv[number]))
